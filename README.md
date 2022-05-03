@@ -22,7 +22,7 @@
 
 <br />
 <div align="center">
-  <h1> NFT Minting Website x Solidity Smart Contract (NOT DONE YET) </h1>
+  <h1> NFT Minting Website x Solidity Smart Contract </h1>
   <br /><br />
 </div>
 
@@ -55,6 +55,8 @@
   In this case it is a website allowing to mint nfts. <br />
   This project contains absolutely all the elements necessary for the functioning of this type of product. <br />
 </p>
+
+<p> I'm not a frontend developper and I'm a beginner with ReactJs so you may squint a few times :) </p>
 
 <p> Demo video https://www.loom.com/share/c2d7ccf5504346b4b8a39c14e9c4074f </p>
 
