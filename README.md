@@ -22,7 +22,7 @@
 
 <br />
 <div align="center">
-  <h1> NFT Minting Website x Solidity Smart Contract </h1>
+  <h1> NFT Minting Website x Solidity Smart Contract (NOT DONE YET) </h1>
   <br /><br />
 </div>
 
@@ -146,6 +146,6 @@ My Github: [https://github.com/clementjuventin](https://github.com/clementjuvent
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/clementjuventin/NFT-Minting-Website-x-Smart-contract/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/cl%C3%A9ment-juventin-ab81841a3/
