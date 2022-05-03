@@ -16,6 +16,8 @@ script.async = true;
 
 document.body.appendChild(script);
 
+// Contract addr 0x92Bf38Acc559b283AC5aCced82b1e8D7BaEa33f9
+
 root.render(
   <React.StrictMode>
     <App />

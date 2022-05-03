@@ -1,6 +1,6 @@
 const main = async () => {
-    const nftContractFactory = await hre.ethers.getContractFactory('ArtCollectible');
-    const nftContract = await nftContractFactory.deploy();
+    const nftContractFactory = await hre.ethers.getContractFactory('NeonApes');
+    const nftContract = await nftContractFactory.deploy("NEON APES", "NEOA", Date.now() + 3600 * 1000 * 7);
     await nftContract.deployed();
     console.log("Contract deployed to:", nftContract.address);
   };

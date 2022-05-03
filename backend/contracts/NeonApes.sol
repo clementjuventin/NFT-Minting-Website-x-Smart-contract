@@ -17,13 +17,13 @@ contract NeonApes is Ownable, ERC721 {
     uint256 public constant MAX_PURCHASE = 3;
     string public baseURI;
 
-    bool public saleIsActive = false;
-    bool public saleIsActiveForwhitelist = false;
+    bool public saleIsActive; // = false;
+    bool public saleIsActiveForwhitelist; // = false;
 
-    uint256 public startingBlock = 0;
+    uint256 public startingBlock;
     uint256 public revealTimestamp;
 
-    bool public specialMintHappened = false;
+    bool public specialMintHappened; // = false;
 
     event Minted(address mintOwner, uint256 newTokenId);
 
@@ -40,7 +40,7 @@ contract NeonApes is Ownable, ERC721 {
     }
 
     // Is whitelisted
-    function isWhitelisted(address addr) external view returns(bool) {
+    function isWhitelisted(address addr) external view returns (bool) {
         return whitelist[addr];
     }
 
@@ -75,6 +75,7 @@ contract NeonApes is Ownable, ERC721 {
     function setBaseURI(string memory uri) external onlyOwner {
         baseURI = uri;
     }
+
     // Get base URI
     function _baseURI() internal view override returns (string memory) {
         return baseURI;
