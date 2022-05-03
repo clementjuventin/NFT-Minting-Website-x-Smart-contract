@@ -1,3 +1,6 @@
+# Custom
+./back/.env
+
 # Logs
 logs
 *.log
