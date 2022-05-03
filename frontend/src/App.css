@@ -1,0 +1,40 @@
+.App {
+  height: 110vh;
+  margin: -20px;
+  padding: 0px;
+  filter: blur(10px);
+}
+body{
+  overflow: hidden;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  position: fixed;
+  z-index: 2;
+  text-shadow: -10px 0px 10px white;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  line-height: 140px;
+}
+
+nav a {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 15px;
+  padding: 12px 12px;
+
+}
+

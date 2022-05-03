@@ -1,0 +1,332 @@
+body {
+    background: #0B0B0B;
+    overflow: hidden;
+}
+
+#center {
+    width: 600px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    margin-left: -300px;
+    margin-top: -50px;
+    background: rgba(0, 0, 0, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+.imageC {
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translateX(-50%);
+    display: inline;
+}
+
+.button {
+    position: absolute;
+    left: 50%;
+    top: 63%;
+    transform: translate(-50%, -50%);
+    display: inline;
+    width: 60%;
+}
+
+#timeLeft {
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        width: 80%;
+    }
+}
+
+#main {
+    width: 0px;
+    height: 40px;
+    background: #03e9f4;
+    float: left;
+
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+
+    transform: all linear 1s;
+}
+
+.row {
+    height: 10px;
+    width: 400px;
+    float: left;
+    display: inherit;
+}
+
+
+
+
+@keyframes stretch {
+    0% {
+        width: 200px;
+    }
+
+    25% {
+        width: 280px;
+    }
+
+    50% {
+        width: 360px;
+    }
+
+    75% {
+        width: 240px;
+    }
+
+    100% {
+        width: 200px;
+    }
+}
+
+@keyframes squeeze {
+    0% {
+        width: 400px;
+    }
+
+    25% {
+        width: 320px;
+    }
+
+    50% {
+        width: 140px;
+    }
+
+    75% {
+        width: 360px;
+    }
+
+    100% {
+        width: 400px;
+    }
+}
+
+.neon {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    padding: 25px 30px;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.neon:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.neon:nth-child(1) {
+    filter: hue-rotate(270deg);
+}
+
+.neon:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+.neon span {
+    position: absolute;
+    display: block;
+}
+
+.neon span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.neon span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.neon span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+
+.neon span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.carousel>div {
+    background-size: contain;
+    image-rendering: optimizeQuality;
+    box-shadow: 0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+.item {
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 150px;
+    height: 150px;
+    line-height: 200px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.95;
+    border-radius: 10px;
+}
+
+.a {
+    transform: rotateY(0deg) translateZ(250px);
+    background: transparent;
+}
+
+.b {
+    transform: rotateY(60deg) translateZ(250px);
+    background: transparent;
+}
+
+.c {
+    transform: rotateY(120deg) translateZ(250px);
+    background: transparent;
+}
+
+.d {
+    transform: rotateY(180deg) translateZ(250px);
+    background: transparent;
+}
+
+.e {
+    transform: rotateY(240deg) translateZ(250px);
+    background: transparent;
+}
+
+.f {
+    transform: rotateY(300deg) translateZ(250px);
+    background: transparent;
+}
+
+.next,
+.prev {
+    color: white;
+    position: absolute;
+    top: 65px;
+    cursor: pointer;
+    background: transparent;
+    margin: 0 100px;
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+}
+
+.next {
+    right: 5em;
+}
+
+.next>img {
+    height: 50px;
+}
+
+.prev>img {
+    height: 50px;
+}
+
+.prev {
+    left: 5em;
+}

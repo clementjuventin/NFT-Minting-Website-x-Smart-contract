@@ -1,0 +1,24 @@
+.logoC {
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.logoC>a {
+    margin: 0 10px;
+}
+
+.logoC>a>img {
+    transition: 1s ease;
+    opacity: 90%;
+    -webkit-filter: drop-shadow(5px 5px 5px #03e9f4);
+    filter: drop-shadow(0 0 20px #03e9f4);
+}
+
+.logoC>a>img:hover {
+    transform: translateY(10px);
+    -webkit-filter: drop-shadow(5px 5px 5px #f281fa);
+    filter: drop-shadow(0 0 20px #f281fa);
+}
