@@ -56,6 +56,8 @@
   This project contains absolutely all the elements necessary for the functioning of this type of product. <br />
 </p>
 
+<p> Demo video https://www.loom.com/share/c2d7ccf5504346b4b8a39c14e9c4074f </p>
+
 ### Built With
 
 This section list the major frameworks used to bootstrap my project.
